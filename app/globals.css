@@ -7,17 +7,20 @@ html, body { margin: 0; min-height: 100%; }
 body {
   @apply bg-nexus-bg text-nexus-text antialiased;
   background-image:
-    radial-gradient(900px 420px at 10% -10%, rgba(54,194,255,.12), transparent 60%),
-    radial-gradient(860px 420px at 100% 0%, rgba(120,130,150,.18), transparent 62%);
+    radial-gradient(920px 420px at 8% -10%, rgba(54,194,255,.16), transparent 62%),
+    radial-gradient(900px 420px at 100% -8%, rgba(120,130,150,.18), transparent 64%),
+    linear-gradient(180deg, #070b14 0%, #070d18 45%, #060a14 100%);
 }
 
 a { color: inherit; }
 
 .docs-prose { @apply space-y-4 leading-7 text-nexus-muted; }
-.docs-h1 { @apply text-3xl font-semibold leading-tight text-nexus-text; }
-.docs-h2 { @apply mt-6 text-2xl font-semibold leading-tight text-nexus-text; }
-.docs-h3 { @apply mt-5 text-xl font-semibold leading-tight text-nexus-text; }
-.docs-h4 { @apply mt-4 text-lg font-semibold leading-tight text-nexus-text; }
+.docs-prose pre { @apply overflow-x-auto rounded-lg border border-nexus-border/80 bg-[#0a0f16] p-4 text-xs text-nexus-muted; }
+.docs-prose code { @apply text-[#b6d7ff]; }
+.docs-h1 { @apply text-3xl font-semibold leading-tight tracking-tight text-nexus-text; }
+.docs-h2 { @apply mt-7 text-2xl font-semibold leading-tight tracking-tight text-nexus-text; }
+.docs-h3 { @apply mt-6 text-xl font-semibold leading-tight text-nexus-text; }
+.docs-h4 { @apply mt-5 text-lg font-semibold leading-tight text-nexus-text; }
 .docs-p { @apply text-base; }
 .docs-ul { @apply list-disc space-y-2 pl-5; }
 .docs-ol { @apply list-decimal space-y-2 pl-5; }
