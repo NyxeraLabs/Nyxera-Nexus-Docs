@@ -23,9 +23,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <span className="font-brand text-sm uppercase tracking-[0.12em] text-nexus-text">Nyxera Nexus Documentation</span>
             </a>
             <nav className="flex flex-wrap gap-2 text-xs sm:text-sm text-nexus-muted">
-              <a href="https://nyxera-nexus.nyxera.cloud" className="rounded border border-nexus-border px-3 py-2 hover:border-nexus-accent hover:text-nexus-text">Product</a>
-              <a href="https://vectorvue.nyxera.cloud" className="rounded border border-nexus-border px-3 py-2 hover:border-nexus-accent hover:text-nexus-text">VectorVue</a>
-              <a href="https://spectrastrike.nyxera.cloud" className="rounded border border-nexus-border px-3 py-2 hover:border-nexus-accent hover:text-nexus-text">SpectraStrike</a>
+              <a href="https://docs.spectrastrike.nyxera.cloud" className="rounded border border-nexus-border px-3 py-2 hover:border-nexus-accent hover:text-nexus-text">SpectraStrike Docs</a>
+              <a href="https://docs.vectorvue.nyxera.cloud" className="rounded border border-nexus-border px-3 py-2 hover:border-nexus-accent hover:text-nexus-text">VectorVue Docs</a>
+              <a href="https://nyxera.cloud" className="rounded border border-nexus-border px-3 py-2 hover:border-nexus-accent hover:text-nexus-text">nyxera.cloud</a>
             </nav>
           </div>
         </header>
