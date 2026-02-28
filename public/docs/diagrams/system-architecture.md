@@ -1,3 +1,8 @@
+---
+layout: default
+title: system architecture
+---
+
 # System Architecture
 
 ```mermaid

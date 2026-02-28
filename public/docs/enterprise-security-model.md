@@ -1,3 +1,8 @@
+---
+layout: default
+title: enterprise security model
+---
+
 # Enterprise Security Model
 
 ## Attestation Model
