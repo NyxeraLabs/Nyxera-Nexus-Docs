@@ -1,3 +1,8 @@
+---
+layout: default
+title: index
+---
+
 # Nyxera Nexus Docs
 
 Nyxera Nexus integrates SpectraStrike execution assurance with VectorVue continuous validation into a single enterprise evidence plane.

@@ -1,3 +1,8 @@
+---
+layout: default
+title: component deep dive
+---
+
 # Component Deep Dive
 
 ## SpectraStrike

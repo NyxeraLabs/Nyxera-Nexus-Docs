@@ -18,7 +18,7 @@ export function DocsShell({ title, children }: { title: string; children: React.
     <div className="mx-auto grid w-full max-w-6xl gap-6 px-4 py-8 sm:px-6 lg:grid-cols-[260px_1fr] lg:px-8">
       <aside className="rounded-xl border border-nexus-border bg-nexus-panel p-4">
         <div className="mb-4 border-b border-nexus-border pb-4">
-          <img src="/nexus-logo.svg" alt="Nyxera Nexus logo" className="h-9 w-9" />
+          <img src="/nexus-logo.svg" alt="Nyxera Nexus logo" className="h-14 w-14" />
           <p className="mt-2 font-brand text-sm uppercase tracking-[0.12em]">Nyxera Nexus Docs</p>
         </div>
         <nav className="space-y-2 text-sm text-nexus-muted">
