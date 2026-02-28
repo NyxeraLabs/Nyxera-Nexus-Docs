@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 const docsLinks = [
+  { href: '/', label: 'Docs Home' },
   { href: '/overview', label: 'Overview' },
   { href: '/architecture', label: 'Architecture' },
   { href: '/federation-model', label: 'Federation Model' },
@@ -8,7 +9,8 @@ const docsLinks = [
   { href: '/compliance-inheritance', label: 'Compliance Inheritance' },
   { href: '/use-cases', label: 'Use Cases' },
   { href: '/enterprise-guide', label: 'Enterprise Guide' },
-  { href: '/reference', label: 'Reference' }
+  { href: '/reference', label: 'Reference' },
+  { href: '/docs/index.md', label: 'Nexus Markdown Index' }
 ];
 
 export function DocsShell({ title, children }: { title: string; children: React.ReactNode }) {
