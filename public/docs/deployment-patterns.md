@@ -1,3 +1,8 @@
+---
+layout: default
+title: deployment patterns
+---
+
 # Deployment Patterns
 
 ## Air-Gapped

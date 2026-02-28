@@ -1,3 +1,8 @@
+---
+layout: default
+title: federation model
+---
+
 # Federation Model
 
 ```mermaid
