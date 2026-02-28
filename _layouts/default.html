@@ -5,15 +5,21 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="description" content="Nyxera Nexus documentation by Nyxera Labs" />
+  <link rel="icon" type="image/png" href="{{ '/nexus-logo-hero.png' | relative_url }}" />
   <style>
     :root { --bg:#070b1c; --surface:#0f1636; --border:#2b3f85; --text:#e8edff; --muted:#a9b6e6; --accent:#36c2ff; }
     * { box-sizing: border-box; }
-    body { margin:0; font-family:"Avenir Next","Segoe UI",Arial,sans-serif; background: var(--bg); color:var(--text); }
+    body { margin:0; font-family:"Avenir Next","Segoe UI",Arial,sans-serif; background:
+      radial-gradient(920px 420px at 8% -10%, rgba(54,194,255,.16), transparent 62%),
+      radial-gradient(900px 420px at 100% -8%, rgba(120,130,150,.18), transparent 64%),
+      linear-gradient(180deg, #070b14 0%, #070d18 45%, #060a14 100%);
+      color:var(--text);
+    }
     a { color:inherit; }
     .topbar { border-bottom:1px solid var(--border); background:rgba(7,11,28,.95); }
     .topbar-row { max-width:1300px; margin:0 auto; padding:14px 16px; display:flex; gap:14px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
     .brand-wrap { display:flex; align-items:center; gap:12px; }
-    .logo { width:64px; height:64px; object-fit:contain; }
+    .logo { width:72px; height:72px; object-fit:contain; }
     .brand-wrap h1 { margin:0; font-size:1.05rem; }
     .brand-wrap p { margin:2px 0 0; color:var(--muted); font-size:.86rem; }
     .nav { display:flex; gap:8px; flex-wrap:wrap; }
@@ -21,11 +27,13 @@
     .shell { max-width:1300px; margin:0 auto; display:grid; gap:16px; padding:18px 16px 28px; grid-template-columns:260px 1fr; }
     .sidebar { border:1px solid var(--border); background:rgba(15,22,54,.82); border-radius:10px; padding:12px; height:max-content; position:sticky; top:20px; }
     .sidebar a { display:block; text-decoration:none; color:var(--muted); border:1px solid transparent; border-radius:6px; padding:7px 9px; margin-bottom:6px; font-size:.88rem; }
-    .content { border:1px solid var(--border); background:rgba(15,22,54,.78); border-radius:10px; padding:18px; }
+    .content { border:1px solid var(--border); background:rgba(15,22,54,.78); border-radius:10px; padding:18px; box-shadow:0 20px 45px rgba(3,8,18,.45); }
     .content pre, .content code { background:rgba(8,15,38,.84); border:1px solid var(--border); border-radius:8px; }
     .content pre { padding:12px; overflow:auto; }
     .footer { border-top:1px solid var(--border); }
-    .footer-row { max-width:1300px; margin:0 auto; padding:14px 16px; display:flex; gap:10px; justify-content:space-between; flex-wrap:wrap; color:var(--muted); font-size:.85rem; }
+    .footer-row { max-width:1300px; margin:0 auto; padding:14px 16px; display:flex; gap:10px; justify-content:space-between; flex-wrap:wrap; color:var(--muted); font-size:.85rem; align-items:center; }
+    .footer-brand { display:flex; align-items:center; gap:10px; }
+    .footer-logo { width:32px; height:32px; object-fit:contain; }
     @media (max-width: 940px) { .shell { grid-template-columns:1fr; } .sidebar { position:static; } }
   </style>
 </head>
@@ -33,7 +41,7 @@
   <header class="topbar">
     <div class="topbar-row">
       <div class="brand-wrap">
-        <img src="{{ '/public/nexus-logo.svg' | relative_url }}" alt="Nyxera Nexus logo" class="logo" />
+        <img src="{{ '/nexus-logo-hero.png' | relative_url }}" alt="Nyxera Nexus logo" class="logo" />
         <div>
           <h1>Nyxera Nexus Documentation</h1>
           <p>Enterprise Integration Documentation</p>
@@ -64,7 +72,10 @@
 
   <footer class="footer">
     <div class="footer-row">
-      <span>© 2026 Nyxera Labs — All Rights Reserved</span>
+      <span class="footer-brand">
+        <img src="{{ '/nyxera-logo.png' | relative_url }}" alt="Nyxera Labs logo" class="footer-logo" />
+        <span>© 2026 Nyxera Labs — All Rights Reserved</span>
+      </span>
       <span>SpectraStrike | VectorVue | Nyxera Nexus</span>
     </div>
   </footer>

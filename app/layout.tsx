@@ -9,7 +9,14 @@ export const metadata: Metadata = {
     template: '%s | Nyxera Nexus Docs'
   },
   description: 'Nyxera Nexus documentation for federation model, deployment, and compliance inheritance.',
-  icons: { icon: '/nexus-logo.svg' }
+  icons: {
+    icon: [
+      { url: '/nexus-logo-hero.png', type: 'image/png' },
+      { url: '/favicon.ico' }
+    ],
+    apple: [{ url: '/nexus-logo-hero.png', type: 'image/png' }],
+    shortcut: ['/nexus-logo-hero.png']
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
