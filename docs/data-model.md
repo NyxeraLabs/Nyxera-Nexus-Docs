@@ -1,3 +1,8 @@
+---
+layout: default
+title: data model
+---
+
 # Data Model
 
 Nexus data model includes:

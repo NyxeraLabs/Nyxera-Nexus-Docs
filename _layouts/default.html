@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="Nyxera Nexus documentation by Nyxera Labs" />
+  <style>
+    :root { --bg:#070b1c; --surface:#0f1636; --border:#2b3f85; --text:#e8edff; --muted:#a9b6e6; --accent:#36c2ff; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:"Avenir Next","Segoe UI",Arial,sans-serif; background: var(--bg); color:var(--text); }
+    a { color:inherit; }
+    .topbar { border-bottom:1px solid var(--border); background:rgba(7,11,28,.95); }
+    .topbar-row { max-width:1300px; margin:0 auto; padding:14px 16px; display:flex; gap:14px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+    .brand-wrap { display:flex; align-items:center; gap:12px; }
+    .logo { width:64px; height:64px; object-fit:contain; }
+    .brand-wrap h1 { margin:0; font-size:1.05rem; }
+    .brand-wrap p { margin:2px 0 0; color:var(--muted); font-size:.86rem; }
+    .nav { display:flex; gap:8px; flex-wrap:wrap; }
+    .nav a { text-decoration:none; font-size:.86rem; border:1px solid var(--border); border-radius:6px; padding:6px 10px; color:var(--muted); }
+    .shell { max-width:1300px; margin:0 auto; display:grid; gap:16px; padding:18px 16px 28px; grid-template-columns:260px 1fr; }
+    .sidebar { border:1px solid var(--border); background:rgba(15,22,54,.82); border-radius:10px; padding:12px; height:max-content; position:sticky; top:20px; }
+    .sidebar a { display:block; text-decoration:none; color:var(--muted); border:1px solid transparent; border-radius:6px; padding:7px 9px; margin-bottom:6px; font-size:.88rem; }
+    .content { border:1px solid var(--border); background:rgba(15,22,54,.78); border-radius:10px; padding:18px; }
+    .content pre, .content code { background:rgba(8,15,38,.84); border:1px solid var(--border); border-radius:8px; }
+    .content pre { padding:12px; overflow:auto; }
+    .footer { border-top:1px solid var(--border); }
+    .footer-row { max-width:1300px; margin:0 auto; padding:14px 16px; display:flex; gap:10px; justify-content:space-between; flex-wrap:wrap; color:var(--muted); font-size:.85rem; }
+    @media (max-width: 940px) { .shell { grid-template-columns:1fr; } .sidebar { position:static; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-row">
+      <div class="brand-wrap">
+        <img src="{{ '/public/nexus-logo.svg' | relative_url }}" alt="Nyxera Nexus logo" class="logo" />
+        <div>
+          <h1>Nyxera Nexus Documentation</h1>
+          <p>Enterprise Integration Documentation</p>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Global Links">
+        <a href="https://docs.spectrastrike.nyxera.cloud">SpectraStrike Docs</a>
+        <a href="https://docs.vectorvue.nyxera.cloud">VectorVue Docs</a>
+        <a href="https://nyxera.cloud">nyxera.cloud</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="shell">
+    <aside class="sidebar">
+      <a href="{{ '/' | relative_url }}">Docs Home</a>
+      <a href="{{ '/docs/index.html' | relative_url }}">Nexus Index</a>
+      <a href="{{ '/docs/nexus-architecture.html' | relative_url }}">Architecture</a>
+      <a href="{{ '/docs/execution-to-telemetry-flow.html' | relative_url }}">Execution Flow</a>
+      <a href="{{ '/docs/federation-model.html' | relative_url }}">Federation</a>
+      <a href="{{ '/docs/deployment-patterns.html' | relative_url }}">Deployment</a>
+      <a href="{{ '/docs/enterprise-security-model.html' | relative_url }}">Security Model</a>
+      <a href="{{ '/docs/use-cases.html' | relative_url }}">Use Cases</a>
+      <a href="{{ '/docs/diagrams/README.html' | relative_url }}">Diagrams</a>
+    </aside>
+    <main class="content">{{ content }}</main>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-row">
+      <span>© 2026 Nyxera Labs — All Rights Reserved</span>
+      <span>SpectraStrike | VectorVue | Nyxera Nexus</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('pre code.language-mermaid').forEach(function (code) {
+        var pre = code.closest('pre');
+        var block = document.createElement('div');
+        block.className = 'mermaid';
+        block.textContent = code.textContent || '';
+        if (pre) pre.replaceWith(block);
+      });
+      if (window.mermaid) {
+        window.mermaid.initialize({ startOnLoad: false, theme: 'dark' });
+        window.mermaid.run();
+      }
+    });
+  </script>
+</body>
+</html>

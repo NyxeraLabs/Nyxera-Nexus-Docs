@@ -1,0 +1,17 @@
+title: Nyxera Nexus Documentation
+markdown: kramdown
+theme: null
+plugins: []
+exclude:
+  - README.md
+  - node_modules
+  - .next
+  - app
+  - components
+  - package.json
+  - package-lock.json
+  - tsconfig.json
+  - tailwind.config.js
+  - postcss.config.js
+  - next.config.js
+  - next-env.d.ts

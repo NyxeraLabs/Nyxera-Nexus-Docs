@@ -3,7 +3,7 @@ import './globals.css';
 import { SiteFooter } from '@/components/site-footer';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://docs.nyxera-nexus.nyxera.cloud'),
+  metadataBase: new URL('https://docs.nexus.nyxera.cloud'),
   title: {
     default: 'Nyxera Nexus Documentation',
     template: '%s | Nyxera Nexus Docs'
@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <header className="border-b border-nexus-border bg-[#0b111a]/90 backdrop-blur">
           <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-4 py-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
-            <a href="https://docs.nyxera-nexus.nyxera.cloud" className="flex items-center gap-3">
+            <a href="https://docs.nexus.nyxera.cloud" className="flex items-center gap-3">
               <img src="/nexus-logo.svg" alt="Nyxera Nexus logo" className="h-14 w-14" />
               <span className="font-brand text-sm uppercase tracking-[0.12em] text-nexus-text">Nyxera Nexus Documentation</span>
             </a>
