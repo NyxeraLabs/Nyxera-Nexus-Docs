@@ -1,3 +1,8 @@
+---
+layout: default
+title: nexus architecture
+---
+
 # Nexus Architecture
 
 ## High-Level Explanation

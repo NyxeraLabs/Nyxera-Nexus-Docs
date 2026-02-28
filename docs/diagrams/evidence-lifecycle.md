@@ -1,3 +1,8 @@
+---
+layout: default
+title: evidence lifecycle
+---
+
 # Evidence Lifecycle
 
 ```mermaid

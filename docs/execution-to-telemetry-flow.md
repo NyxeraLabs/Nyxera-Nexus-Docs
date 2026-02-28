@@ -1,3 +1,8 @@
+---
+layout: default
+title: execution to telemetry flow
+---
+
 # Execution to Telemetry Flow
 
 1. Wrapper invocation: SpectraStrike launches a policy-approved wrapper with deterministic runtime metadata.
