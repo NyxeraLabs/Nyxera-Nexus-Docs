@@ -1,3 +1,8 @@
+---
+layout: default
+title: threat informed validation
+---
+
 # Threat-Informed Validation
 
 Nexus maps execution outcomes to threat-informed controls and detection expectations.

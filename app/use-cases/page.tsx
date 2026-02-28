@@ -1,13 +1,10 @@
 import { DocsShell } from '@/components/docs-shell';
+import { DocContent } from '@/components/doc-content';
 
-export default function Page() {
+export default async function Page() {
   return (
     <DocsShell title="Use Cases">
-      <ul className="list-disc space-y-2 pl-5">
-        <li>Continuous adversary simulation with signed provenance</li>
-        <li>Board-ready security assurance narratives</li>
-        <li>Regulated enterprise evidence pipelines</li>
-      </ul>
+      <DocContent docPath="use-cases.md" />
     </DocsShell>
   );
 }
