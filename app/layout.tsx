@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="border-b border-nexus-border bg-[#0b111a]/90 backdrop-blur">
           <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-4 py-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
             <a href="https://docs.nyxera-nexus.nyxera.cloud" className="flex items-center gap-3">
-              <img src="/nexus-logo.svg" alt="Nyxera Nexus logo" className="h-9 w-9" />
+              <img src="/nexus-logo.svg" alt="Nyxera Nexus logo" className="h-14 w-14" />
               <span className="font-brand text-sm uppercase tracking-[0.12em] text-nexus-text">Nyxera Nexus Documentation</span>
             </a>
             <nav className="flex flex-wrap gap-2 text-xs sm:text-sm text-nexus-muted">
