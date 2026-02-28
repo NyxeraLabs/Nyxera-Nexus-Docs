@@ -12,3 +12,12 @@ body {
 }
 
 a { color: inherit; }
+
+.docs-prose { @apply space-y-4 leading-7 text-nexus-muted; }
+.docs-h1 { @apply text-3xl font-semibold leading-tight text-nexus-text; }
+.docs-h2 { @apply mt-6 text-2xl font-semibold leading-tight text-nexus-text; }
+.docs-h3 { @apply mt-5 text-xl font-semibold leading-tight text-nexus-text; }
+.docs-h4 { @apply mt-4 text-lg font-semibold leading-tight text-nexus-text; }
+.docs-p { @apply text-base; }
+.docs-ul { @apply list-disc space-y-2 pl-5; }
+.docs-ol { @apply list-decimal space-y-2 pl-5; }

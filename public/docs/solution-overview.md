@@ -1,3 +1,8 @@
+---
+layout: default
+title: solution overview
+---
+
 # Solution Overview
 
 Nexus joins two platform domains:

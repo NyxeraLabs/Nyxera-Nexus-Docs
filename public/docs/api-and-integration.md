@@ -1,3 +1,8 @@
+---
+layout: default
+title: api and integration
+---
+
 # API and Integration
 
 Nexus APIs expose validated evidence, correlation summaries, policy states, and export endpoints for SIEM, ticketing, and GRC workflows.
@@ -8,3 +13,9 @@ Integration patterns include:
 - Push-based webhook emissions for incident workflows
 - Scheduled governance export feeds
 - Bidirectional state synchronization with enterprise control systems
+
+## Integration Documents
+
+- [Telemetry API](./telemetry-api.md)
+- [SpectraStrike Integration](./integration-spectrastrike.md)
+- [VectorVue Integration](./integration-vectorvue.md)
