@@ -1,3 +1,8 @@
+---
+layout: default
+title: federation model
+---
+
 # Federation Model
 
 Nexus federation supports enterprise-scale evidence exchange without collapsing tenant isolation.

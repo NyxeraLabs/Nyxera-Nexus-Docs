@@ -1,3 +1,8 @@
+---
+layout: default
+title: api and integration
+---
+
 # API and Integration
 
 Nexus APIs expose validated evidence, correlation summaries, policy states, and export endpoints for SIEM, ticketing, and GRC workflows.

@@ -1,3 +1,8 @@
+---
+layout: default
+title: glossary
+---
+
 # Glossary
 
 - **Execution Fingerprint**: Deterministic hash linking execution intent and runtime context.

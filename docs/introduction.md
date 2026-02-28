@@ -1,3 +1,8 @@
+---
+layout: default
+title: introduction
+---
+
 # Introduction
 
 Nyxera Nexus is the enterprise integration layer that binds offensive validation execution and telemetry analytics into a governed security evidence workflow.

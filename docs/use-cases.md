@@ -1,3 +1,8 @@
+---
+layout: default
+title: use cases
+---
+
 # Use Cases
 
 ## Continuous Red Team Validation
